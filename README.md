@@ -1,2 +1,1 @@
-# Discord Bot Hosting
-https://securesrv.io
+# Discord.js 12 Bot Hosting docker image
