@@ -15,7 +15,7 @@ ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
     # NodeJS
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
     && apt update \
     && apt -y upgrade \
     && apt -y install nodejs node-gyp \
