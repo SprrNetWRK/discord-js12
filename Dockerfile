@@ -19,9 +19,9 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
     && apt update \
     && apt -y upgrade \
     && apt -y install nodejs node-gyp \
-    && apt -y install ffmpeg
+    && apt -y install ffmpeg \
     && npm install discord.js node-opus opusscript \
-    && npm install sqlite3 --build-from-source
+    && npm install sqlite3 --build-from-source \
     && npm install better-sqlite3 --build-from-source
 
 USER container
