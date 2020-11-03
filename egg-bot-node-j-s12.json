@@ -7,7 +7,7 @@
     "name": "BotTemplateIceCream",
     "author": "tan.sergent@gmail.com",
     "description": "Egg Template bot",
-    "image": "SprrNetWRK/discord-js12",
+    "image": "chaun14\/discord-js12",
     "startup": "node ${STARTUP_FILE}",
     "config": {
         "files": "{}",
