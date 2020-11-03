@@ -5,9 +5,9 @@
     },
     "exported_at": "2020-04-26T12:44:59+02:00",
     "name": "BotTemplateIceCream",
-    "author": "IceCream",
+    "author": "tan.sergent@gmail.com",
     "description": "Egg Template bot",
-    "image": "chaun14\/discord-js12",
+    "image": "SprrNetWRK/discord-js12",
     "startup": "node ${STARTUP_FILE}",
     "config": {
         "files": "{}",
@@ -18,14 +18,14 @@
     "scripts": {
         "installation": {
             "script": "#!\/bin\/bash\r\nrm -rf \/mnt\/server\r\napt -y update\r\napt -y install wget unzip ffmpeg\r\nmkdir -p \/mnt\/server\/\r\nchown -R root:root \/mnt\r\ncd \/mnt\/server\/\r\nwget https://github.com/SprrNetWRK/BotTemplate/archive/master.zip\r\nunzip nodejsdefault\r\nrm -rf nodejsdefault.zip",
-            "container": "ubuntu:18.04",
+            "container": "ubuntu:20.04",
             "entrypoint": "bash"
         }
     },
     "variables": [
         {
-            "name": "Startup File",
-            "description": "Select a file to start your bot from!",
+            "name": "Fichier Index",
+            "description": "fichier Index du bot ex : index.js",
             "env_variable": "STARTUP_FILE",
             "default_value": "index.js",
             "user_viewable": 1,
