@@ -4,9 +4,9 @@
         "version": "PTDL_v1"
     },
     "exported_at": "2020-04-26T12:44:59+02:00",
-    "name": "Bot NodeJS12",
-    "author": "contact@chaun14.fr",
-    "description": "Bot NodeJS 12",
+    "name": "BotTemplateIceCream",
+    "author": "IceCream",
+    "description": "Egg Template bot",
     "image": "chaun14\/discord-js12",
     "startup": "node ${STARTUP_FILE}",
     "config": {
@@ -17,7 +17,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\nrm -rf \/mnt\/server\r\napt -y update\r\napt -y install wget unzip ffmpeg\r\nmkdir -p \/mnt\/server\/\r\nchown -R root:root \/mnt\r\ncd \/mnt\/server\/\r\nwget https:\/\/dev.chaun14.fr\/nodejsdefault.zip\r\nunzip nodejsdefault\r\nrm -rf nodejsdefault.zip",
+            "script": "#!\/bin\/bash\r\nrm -rf \/mnt\/server\r\napt -y update\r\napt -y install wget unzip ffmpeg\r\nmkdir -p \/mnt\/server\/\r\nchown -R root:root \/mnt\r\ncd \/mnt\/server\/\r\nwget https://github.com/SprrNetWRK/BotTemplate/archive/master.zip\r\nunzip nodejsdefault\r\nrm -rf nodejsdefault.zip",
             "container": "ubuntu:18.04",
             "entrypoint": "bash"
         }
