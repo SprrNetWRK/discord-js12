@@ -17,7 +17,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\nrm -rf \/mnt\/server\r\napt -y update\r\napt -y install wget unzip ffmpeg\r\nmkdir -p \/mnt\/server\/\r\nchown -R root:root \/mnt\r\ncd \/mnt\/server\/\r\nwget https://github.com/SprrNetWRK/BotTemplate/archive/master.zip\r\nunzip nodejsdefault\r\nrm -rf nodejsdefault.zip",
+            "script": "#!\/bin\/bash\r\nrm -rf \/mnt\/server\r\napt -y update\r\napt -y install wget unzip ffmpeg\r\nmkdir -p \/mnt\/server\/\r\nchown -R root:root \/mnt\r\ncd \/mnt\/server\/\r\nwget https://github.com/sprrnetwrk/bottemplate/archive/master.zip\r\nunzip master\r\nrm -rf master.zip",
             "container": "ubuntu:20.04",
             "entrypoint": "bash"
         }
@@ -27,7 +27,7 @@
             "name": "Fichier Index",
             "description": "fichier Index du bot ex : index.js",
             "env_variable": "STARTUP_FILE",
-            "default_value": "index.js",
+            "default_value": "main.js",
             "user_viewable": 1,
             "user_editable": 1,
             "rules": "required|string|max:200"
